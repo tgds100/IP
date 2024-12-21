@@ -1,0 +1,10 @@
+;; A Records
+tgdaosheng.ggff.net.	1	IN	A	104.16.249.249
+eu1.tgdaosheng.ggff.net.	86400	IN	A	66.81.247.173
+eu2.tgdaosheng.ggff.net.	86400	IN	A	172.64.233.148
+hk.tgdaosheng.ggff.net.	86400	IN	A	172.64.151.134
+jp.tgdaosheng.ggff.net.	86400	IN	A	1.1.1.59
+us.tgdaosheng.ggff.net.	86400	IN	A	104.17.229.146
+
+;; AAAA Records
+tgdaosheng.ggff.net.	1	IN	AAAA	2606:4700::6810:f9f9
