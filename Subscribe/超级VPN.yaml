@@ -78,67 +78,81 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇭🇰香港-1\r","type":"trojan","server":"104.17.248.203","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
-  - {"name":"🇭🇰香港-2\r","type":"trojan","server":"172.67.68.204","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
-  - {"name":"🇺🇸美国-3\r","type":"trojan","server":"104.18.30.170","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
-  - {"name":"🇺🇸美国-4\r","type":"trojan","server":"104.18.21.177","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
+  - {"name":"🇭🇰香港-1","type":"trojan","server":"104.17.248.203","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
+  - {"name":"🇭🇰香港-2","type":"trojan","server":"172.67.68.204","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
+  - {"name":"🇺🇸美国-3","type":"trojan","server":"104.18.30.170","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
+  - {"name":"🇺🇸美国-4","type":"trojan","server":"104.18.21.177","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.tgdaosheng.dynv6.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.dynv6.net"}}}
+  - {"name":"🇺🇸美国🚀丨🛜①","type":"trojan","server":"104.18.30.170","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
+  - {"name":"🇺🇸美国🚀丨🛜②","type":"trojan","server":"104.18.26.90","port":443,"udp":true,"password":"vs6f8hvt","sni":"trojan.cchappy.eu.org","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.cchappy.eu.org"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "🇭🇰香港-1\r"
-      - "🇭🇰香港-2\r"
-      - "🇺🇸美国-3\r"
-      - "🇺🇸美国-4\r"
+      - 🇭🇰香港-1
+      - 🇭🇰香港-2
+      - 🇺🇸美国-3
+      - 🇺🇸美国-4
+      - 🇺🇸美国🚀丨🛜①
+      - 🇺🇸美国🚀丨🛜②
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "🇭🇰香港-1\r"
-      - "🇭🇰香港-2\r"
-      - "🇺🇸美国-3\r"
-      - "🇺🇸美国-4\r"
+      - 🇭🇰香港-1
+      - 🇭🇰香港-2
+      - 🇺🇸美国-3
+      - 🇺🇸美国-4
+      - 🇺🇸美国🚀丨🛜①
+      - 🇺🇸美国🚀丨🛜②
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "🇭🇰香港-1\r"
-      - "🇭🇰香港-2\r"
-      - "🇺🇸美国-3\r"
-      - "🇺🇸美国-4\r"
+      - 🇭🇰香港-1
+      - 🇭🇰香港-2
+      - 🇺🇸美国-3
+      - 🇺🇸美国-4
+      - 🇺🇸美国🚀丨🛜①
+      - 🇺🇸美国🚀丨🛜②
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "🇭🇰香港-1\r"
-      - "🇭🇰香港-2\r"
-      - "🇺🇸美国-3\r"
-      - "🇺🇸美国-4\r"
+      - 🇭🇰香港-1
+      - 🇭🇰香港-2
+      - 🇺🇸美国-3
+      - 🇺🇸美国-4
+      - 🇺🇸美国🚀丨🛜①
+      - 🇺🇸美国🚀丨🛜②
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "🇭🇰香港-1\r"
-      - "🇭🇰香港-2\r"
-      - "🇺🇸美国-3\r"
-      - "🇺🇸美国-4\r"
+      - 🇭🇰香港-1
+      - 🇭🇰香港-2
+      - 🇺🇸美国-3
+      - 🇺🇸美国-4
+      - 🇺🇸美国🚀丨🛜①
+      - 🇺🇸美国🚀丨🛜②
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "🇭🇰香港-1\r"
-      - "🇭🇰香港-2\r"
-      - "🇺🇸美国-3\r"
-      - "🇺🇸美国-4\r"
+      - 🇭🇰香港-1
+      - 🇭🇰香港-2
+      - 🇺🇸美国-3
+      - 🇺🇸美国-4
+      - 🇺🇸美国🚀丨🛜①
+      - 🇺🇸美国🚀丨🛜②
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -161,10 +175,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "🇭🇰香港-1\r"
-      - "🇭🇰香港-2\r"
-      - "🇺🇸美国-3\r"
-      - "🇺🇸美国-4\r"
+      - 🇭🇰香港-1
+      - 🇭🇰香港-2
+      - 🇺🇸美国-3
+      - 🇺🇸美国-4
+      - 🇺🇸美国🚀丨🛜①
+      - 🇺🇸美国🚀丨🛜②
 
 rules:
 # 本地/局域网地址
